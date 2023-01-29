@@ -3,15 +3,30 @@
 * {
     margin: 0px;
     padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
 }
 
 body {
-    background: url(../imagens/fundo.webp) no-repeat black;
+    margin: 0px;
+    overflow: hidden;
+}
+/*
+body {
+    background: url(../imagens/matrix.jpg) no-repeat black;
     background-size: cover;
 }
-
+*/
 section#fone {
-    background: url(../imagens/smartfone-xiaomi.png) no-repeat;
+    background: url(../imagens/xiaomi-poco.png) no-repeat;
     background-size: cover;
     position: absolute;
     top: 50%;
@@ -26,7 +41,28 @@ iframe#tela {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 236px;
-    height: 516px;
-    border-radius: 30px;
+    width: 245px;
+    height: 550px;
+    border-radius: 23px;
+}
+
+section#redes {
+    position: absolute;
+    top: 10%;
+    left: 92%;
+    margin: auto;
+}
+
+section > a >img {
+    width: 80px;
+    border-radius: 50%;
+    margin: 20px;
+    box-shadow: 5px 5px 10px rgb(255, 255, 255);
+    box-sizing: border-box;
+}
+section > a > img:hover {
+    box-shadow: 10px 10px 15px white;
+    transform: translate(-5px, -5px);
+    border: 2px solid white;
+    transition: 0.3s border 0.1s;
 }
